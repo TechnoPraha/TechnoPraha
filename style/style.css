@@ -1,0 +1,60 @@
+body {
+    background-color: #00cdcd;
+    font-family: georgia;
+}
+
+#container {
+width: 90%;
+margin: 0 auto;
+padding: 0;
+}
+
+#nav-menu-links {	
+border: 1px solid #eee;
+margin: 00;
+padding: 0;
+background: black;
+height: 60px;
+}
+
+#nav-menu-links h1,a {
+float: left;
+margin: 00;
+padding: 15px 0 15px 15px;
+font-size: 150%;	
+text-transform: uppercase;
+letter-spacing: 3px;
+color:  gray;
+background: inherit;
+}
+
+#img-logo {
+height: 60px;
+float:left;
+}
+
+#img-main {
+margin-top: 2em;
+height: 350px;
+width: 20%;
+float: left;
+}
+
+#container-text {
+width: 70%;
+margin-top: 100px;
+margin-left: 345px;
+padding: 0px 0px 0px 0px;
+}
+
+#container-text h1,h2 {
+text-align: center;
+margin: 00;
+padding: 15px 0 15px 15px;
+text-transform: uppercase;
+letter-spacing: 3px;
+color:  gray;
+}
+
+
+
