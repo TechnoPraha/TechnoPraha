@@ -42,7 +42,14 @@ float: left;
 
 #container-text {
 width: 70%;
-margin-top: 100px;
+margin-top: 60px;
+margin-left: 345px;
+padding: 0px 0px 0px 0px;
+}
+
+#container-text2 {
+width: 70%;
+margin-top: 25px;
 margin-left: 345px;
 padding: 0px 0px 0px 0px;
 }
@@ -54,6 +61,23 @@ padding: 15px 0 15px 15px;
 text-transform: uppercase;
 letter-spacing: 3px;
 color:  gray;
+}
+
+#container-text2 h1,h2 {
+text-align: center;
+margin: 00;
+padding: 15px 0 15px 15px;
+text-transform: uppercase;
+letter-spacing: 3px;
+color:  gray;
+}
+
+
+#container-plugin {
+float: left;
+text-align: center;
+width: 460px;
+margin-top: 25px;
 }
 
 
