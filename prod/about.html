@@ -1,32 +1,269 @@
 <!DOCTYPE html>  
-    <html>
-    <head>
-    	<title>Techno Praha - About</title>
-    	<link rel="stylesheet" type="text/css" href="style/style.css">
-    </head>
+<html amp>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <title> About Us - Urban Sound Prague</title>
+      <link rel="canonical" href="about.html">
+      <meta name="description" content="Urban Sound Prague provides a foundation for all you electronic music lovers who want to enter the world of Techno and Technotronic in Prague.">
+      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+      <style amp-custom>
 
-    <body>
-           <div id="container">
-    		<div id="nav-menu-links">
-                	<h1>Visit Our Links:</h1>
-                        <a href="https://www.facebook.com/urbansoundprague/"> Facebook Site </a>
-                        <a href="index.html">  Links/Events  </a>
-                        <a href="about.html"> About </a>
-                        <a href="contact.html">  Contact  </a>
-    		</div>
-       
-                <div id="img-main">
-    		          <img src="images/tpraha.jpg" height=100%></img>
-                </div>
+      body {
+      background-color: white;
+      font-family: georgia;
+      }
 
-                <div id="container-text">
-                <h1> ABOUT US </h1>
-                <h2> Techno enthusiasts. We want to give you ideas about the best techno shit during your stay in Prague. Coming soon: We will be updating our website with blogs and links during the next weeks.
-          <br><br>       
-          Mu&#381i a &#381eny ot&#345ese osly     
-         </h2>
-                </div>
-   </div>
-</body>
+      #container{
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+      }
+
+      nav {	
+      border: 1px solid #eee;
+      margin: 00;
+      padding: 0;
+      background: black;
+      height: 60px;
+      }
+
+      nav h1,a{
+      text-align: left;
+      float: left;
+      padding: 0px 0px 0px 5px;
+      margin: 00;
+      font-size: 105%;	
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: inherit;
+      }
+
+      nav h1{
+      color: white;
+      }
+
+      nav a:hover{
+      color: blue;
+      }
+
+      nav ul{
+      width:95%;  
+      }
+
+      nav li{
+      float:left;
+      padding: 0px 10px 0px 10px;
+      margin: 0;
+      }
+
+      nav select {
+      display: none;
+      }
+
+
+      #img-logo {
+      height:60px;
+      float:left;
+      }
+
+      #img-main {
+      margin-right: 20px;
+      width: 35%;
+      float: left;
+      }
+
+      #container-text {
+      width: 98%;
+      }
+
+      #wrapper{
+      width: 100%;
+      margin:0;
+      margin-top: 20px;
+      padding:0;
+      float:none;
+      display:table;
+      margin-bottom: 20px;
+      }
+
+      #container-text2 {
+      width: 100%;
+      margin:0;
+      padding:0;
+      }
+
+      #container-text h2{
+      text-align: center;
+      text-transform: uppercase;
+      font-size:3vw;
+      }
+
+      #container-text p {
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color:  black;
+      font-size: 1.5vw;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      #container-text2 p {
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color:  black;
+      font-size: 1.8vw;
+      }
+
+      @media only screen and (max-width : 801px) {
+
+      nav h1,a{
+      font-size: 70%;	
+      }  
+
+
+      }
+
+      @media only screen and (max-width : 500px) {
+
+      #container-text { 
+      width: 80%;
+      margin-top: 0;
+      margin: auto;
+      padding: 0;
+      }
+
+
+      nav a{
+      display: none; 
+      }
+
+      nav h1{
+      font-size: 3vw;
+      float: none;
+      text-align: center;
+      margin: 20px 0px 15px 0px;
+      }
+
+      .dropdown-content {
+      background-color: black;
+      width: 60%;
+      float: left;
+      z-index: 99;
+      margin: 0px 0px 50px 60px;
+      padding: 0;
+      position: absolute;
+      display: none;
+      }
+
+      nav li{
+      float:left;
+      clear:left;
+      list-style-type:none;
+      }
+
+      nav ul{
+      padding: 0;
+      margin: 0;
+      }
+
+      .dropdown-content a {
+      display: block;
+      }
+
+      nav:hover .dropdown-content {
+      display: block;
+      } 
+
+      #img-main {
+      margin-top: 2em;
+      width: 50%;
+      float: none;
+      margin: auto;
+      margin-top: 15px;
+      }
+
+      #wrapper {
+      margin-top: 5px;
+      }
+
+      #container-text p{
+      font-size: 2.2vw;
+      }
+     
+      #container-text h2{
+      font-size: 5vw;
+      }
+
+      }
+
+
+      </style>
+  </head>
+
+  <body>
+
+    <amp-analytics type="googleanalytics">
+    <script type="application/json">
+    {
+    "vars": {
+        "account": "UA-102730739-1"
+            },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
+
+    <div id="container">
+    	<nav>
+        <div id="img-logo">    
+          <amp-img src="images/tpraha.jpg" width=60px height=60px></amp-img>
+        </div>
+
+            <div class="optional-dropdown">
+              <h1>Visit Our Links</h1>
+                <div class="dropdown-content">
+                <ul>  
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="promotions.html"> Blogs </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="contact.html">  Contact  </a></li>
+                <li><a href="https://www.facebook.com/urbansoundprague/"> Facebook Site </a></li>
+                </ul>
+              </div>
+            </div>
+      </nav>
+            
+    <div id="wrapper">
+      <div id="img-main">
+    		<amp-img src="images/tpraha.jpg" height=1100 width=900 layout="responsive"></amp-img>
+      </div>
+
+      <div id="container-text">
+        <h2> About Us </h2>
+        <p> Urbansoundprague provides a foundation for all you electronic music lovers, club enthusiastics, dancing queens and boys and all others who want to enter the world of Techno and Technotronic in Prague.<br><br>
+            Czech out first whats going on around the clubs in Praha on our home page or "Techno Praha" facebook site (link above). We update every week and search for the freshest and coolest events, underground clubs and beats.<br><br>
+            While on "Techno Praha", you might consider to hit the LIKE Button to show support and love to us, because we are a non-profit, non-bullshit organization.  While you suppport us, we have plans and updates coming, so stay tuned for more on urbansoundprague.com.
+      </div>
+    </div>
+          
+      <div id="container-text2">
+            <p>
+            We have fun. We love techno. We want the same for you.  Holla at us.<br><br>       
+            Muži a ženy otřese osly </p>
+      </div>
+    </div>
+  </body>
+</html>
     
 

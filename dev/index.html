@@ -1,39 +1,367 @@
 <!DOCTYPE html>  
-    <html>
-    <head>
-    	<title>Techno Praha - Home</title>
-    	<link rel="stylesheet" type="text/css" href="style/style.css">
-    </head>
+<html amp>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <title> Urban Sound Prague - Techno Parties and Events in Praha</title>
+      <link rel="canonical" href="index.html">
+       <meta name="description" content="Urban Sound Prague is devoted to bringing you the best techno parties and events happening all over Prague this weekend">
+      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+      <style amp-custom>
 
-    <body>
-        <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=326143591144097";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document,'script', 'facebook-jssdk'));</script>
-           <div id="container">
-    		<div id="nav-menu-links">
-                <div id="img-logo">    
-                    <img src="images/tpraha.jpg" height=100%>
-                </div>
-                	<h1>Visit Our Links:</h1>
-                        <a href="https://www.facebook.com/urbansoundprague/"> Facebook Site </a>
-                        <a href="index.html">  Links/Events  </a>
-                        <a href="about.html"> About </a>
-                        <a href="contact.html">  Contact  </a>
+      body {
+      background-color: white;
+      font-family: georgia;
+      }
+
+      #container{
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+      }
+
+      nav {	
+      border: 1px solid #eee;
+      margin: 00;
+      padding: 0;
+      background: black;
+      height: 60px;
+      }
+
+      nav h1,a{
+      text-align: left;
+      float: left;
+      padding: 0px 0px 0px 5px;
+      margin: 00;
+      font-size: 105%;	
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: inherit;
+      }
+
+      nav h1{
+      color: white;
+      }
+
+      nav a:hover{
+      color: blue;
+      }
+
+      nav ul{
+      width:95%;  
+      }
+
+      nav li{
+      float:left;
+      padding: 0px 10px 0px 10px;
+      margin: 0;
+      }
+
+      nav select {
+      display: none;
+      }
+
+
+      #img-logo {
+      height:60px;
+      float:left;
+      }
+
+      .img-main {
+        width:360px;
+        height: 230px;
+        overflow-y: hidden;
+        margin-top: 0;
+        padding:0;
+        float:left;
+      }
+
+      header,footer{
+      width: 90%;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align:center;
+      font-size: 80%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+
+      .wrapper{
+      width: 100%;
+      height: 230px;
+      margin-top: 20px;
+      padding:0;
+      float:none;
+      display:table;
+      margin-bottom: 20px;
+      }
+
+
+      .container-text {
+      width: calc(90%-360px);
+      height: 230px;
+      margin:0;
+      margin-left: 360px;
+      padding:0;    
+      overflow: hidden;
+      }
+
+      .container-text p {
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color:  black;
+      font-size: 180%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      overflow: ellipsis;
+      }
+
+      @media only screen and (max-width : 801px) {
+
+      nav h1,a{
+      font-size: 70%;	
+      }  
+
+
+      }
+
+      @media only screen and (max-width : 500px) {
+
+      #container-text { 
+      width: 80%;
+      margin-top: 0;
+      margin: auto;
+      padding: 0;
+      }
+
+
+      nav a{
+      display: none; 
+      }
+
+      nav h1{
+      font-size: 3vw;
+      float: none;
+      text-align: center;
+      margin: 20px 0px 15px 0px;
+      }
+
+      .dropdown-content {
+      background-color: black;
+      width: 60%;
+      float: left;
+      z-index: 99;
+      margin: 0px 0px 50px 60px;
+      padding: 0;
+      position: absolute;
+      display: none;
+      }
+
+      nav li{
+      float:left;
+      clear:left;
+      list-style-type:none;
+      }
+
+      nav ul{
+      padding: 0;
+      margin: 0;
+      }
+
+      .dropdown-content a {
+      display: block;
+      }
+
+      nav:hover .dropdown-content {
+      display: block;
+      } 
+
+      header,footer {
+      font-size: 40%;
+      }
+
+      .img-main{
+        float:none;
+      }
+
+      .wrapper {
+      margin-top: 5px;
+      height: 360px;
+      width: 350px;
+      }
+
+      .container-text {
+      width: 350px;
+      height: 130px;
+      float: none;
+      margin-left: 0px;
+      margin-top:10px;
+      }
+
+      .container-text p{
+        font-size: 140%;
+      }
+
+      }
+
+
+      </style>
+  </head>
+
+  <body>
+
+    <amp-analytics type="googleanalytics">
+    <script type="application/json">
+    {
+    "vars": {
+        "account": "UA-102730739-1"
+            },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
+
+    <div id="container">
+    	<nav>
+        <div id="img-logo">    
+          <amp-img src="images/tpraha.jpg" width=60px height=60px></amp-img>
+        </div>
+
+            <div class="optional-dropdown">
+              <h1>Visit Our Links</h1>
+                <div class="dropdown-content">
+                <ul>  
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="promotions.html"> Blogs </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="contact.html">  Contact  </a></li>
+                <li><a href="https://www.facebook.com/urbansoundprague/"> Facebook Site </a></li>
+                </ul>
+              </div>
             </div>
+      </nav>
 
-                <div id="container-plugin">
-                <div class="fb-page" data-href="https://www.facebook.com/urbansoundprague" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/urbansoundprague" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/urbansoundprague"> Facebook</a></blockquote></div>
-                </div>                
-            
-                <div id="container-text2">
-                <h1> Czech our facebook for weekly alternative and authentic techno events </h1>
-                </div>
+      <header><h1>Welcome to urbansoundprague.com. Check out some of the best techno events in Prague below (click on the image for a link to facebook)</h1></header>
+       
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/974800009334790"
+            data-width=350>
+          </amp-facebook>
+        </div>
 
+        <div class="container-text">
+          <p><strong>Sundance</strong><br><font color="red">When:</font> July 30, 23:00<br><font color="red">Where:</font> Roxy Prague<br>
+        </div>
+      </div>
 
-   </div>
-</body>
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/974797699335021"
+            data-width=350>
+          </amp-facebook>
+        </div>
+
+        <div class="container-text">
+          <p><strong>MasterFader (Live & Dj set) na Vzduchu</strong><br><font color="red">When:</font> July 29, 19:00<br><font color="red">Where:</font>Tiskárna na Vzduchu<br>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/974797196001738"
+            data-width=350>
+          </amp-facebook>
+        </div>
+
+        <div class="container-text">
+          <p><strong>CUKR plenér</strong><br><font color="red">When:</font> July 28 - July 30<br><font color="red">Where:</font> U Vizerky 2299/6<br>
+        </div>
+      </div>
+
+       <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/970553716426086"
+            data-width=350>
+          </amp-facebook>
+        </div>
+
+        <div class="container-text">
+          <p><strong>Dimensions & Cross presents Soul&Sin w/ HUNEE (Rush Hour)</strong><br><font color="red">When:</font> July 22 14:00 - July 23 20:00<br><font color="red">Where:</font> Cross Club<br>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/970350293113095"
+            data-width=350>
+          </amp-facebook>
+        </div>
+
+        <div class="container-text">
+          <p><strong>Stslin Siesta: SEED</strong><br><font color="red">When:</font> July 23 17:00<br><font color="red">Where:</font> Stalin<br>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/970348809779910"
+            data-width=350>
+          </amp-facebook>
+        </div>
+
+        <div class="container-text">
+          <p><strong>Komiks w/ San Proper - Rush Hour, Makam - Dekmantel, Hrtl & more</strong><br><font color="red">When:</font> July 21, 17:00<br><font color="red">Where:</font> Mladoboleslavská 347<br>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/970347576446700"
+            data-width=350>
+          </amp-facebook>
+        </div>
+
+        <div class="container-text">
+          <p><strong>Abstrkt w/ Ark3r (all night long)</strong><br><font color="red">When:</font> July 20, 22:00<br><font color="red">Where:</font> U Bukanýra - Music Boat<br>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-facebook width=350 height=310
+            data-href="https://www.facebook.com/urbansoundprague/posts/970347233113401"
+            data-width=350>
+          </amp-facebook>
+        </div>
+
+      <div class="container-text">
+          <p><strong>>XYZ invites Ian Max Mauch, Tom DJambo</strong><br><font color="red">When:</font> July 19, 14:00<br><font color="red">Where:</font> VILA Štvanice <br>
+        </div>
+      </div>
+
+      <footer><p>Need more shit? Check out the full history of promoted events on our facebook site....</p></footer>
+
+    </div>
+  </body>
+</html>
+    
+
