@@ -3,11 +3,12 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
       <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
       <script async src="https://cdn.ampproject.org/v0.js"></script>
-      <title> Blogs - Urban Sound Prague</title>
-      <link rel="canonical" href="promotions.html">
-      <meta name="description" content="An intimate guide to the techno nightlife scene in Praha from our bloggers.">
+      <title> Urban Sound Prague - Techno Parties and Events in Praha</title>
+      <link rel="canonical" href="index.html">
+       <meta name="description" content="Urban Sound Prague is devoted to bringing you the best techno parties and events happening all over Prague this weekend">
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
       <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
       <style amp-custom>
@@ -51,8 +52,8 @@
       }
 
       nav ul{
-      width:95%;  
-      list-style: none;
+      width:95%; 
+      list-style: none; 
       }
 
       nav li{
@@ -71,28 +72,63 @@
       float:left;
       }
 
-      #img-main {
-      margin-top: 2em;
-      width: 35%;
-      float: left;
+      .img-main {
+        width:70px;
+        height: 100px;
+        overflow-y: hidden;
+        padding:0;
+        margin:0;
+        margin-right:20px;
+        float:left;
       }
 
-      #container-text {
+      header,footer{
+      width: 90%;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align:center;
+      font-size: 80%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+
+      .wrapper{
       width: 100%;
-      margin-top: 60px;
-      margin-left: 50px;
-      padding: 0px 0px 0px 0px;
+      height: 100px;
+      margin-top: 20px;
+      padding:0;
+      float:none;
+      display:table;
+      margin-bottom: 20px;
+      border:1px solid black;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+      }
+      
+      .container-text {
+      width: calc(90%-100px);
+      height: 100px;
+      margin:0;
+      margin-left: 100px;
+      padding:0;    
+      overflow: hidden;
       }
 
-      #container-text p {
-      text-align: center;
-      margin: 00;
-      padding: 15px 0 15px 15px;
+      .container-text p {
+      text-align: left;
       text-transform: uppercase;
       letter-spacing: 3px;
       color:  black;
-      font-size: 4vw;
+      font-size: 180%;
+      margin: 0;
+      padding: 0;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      } 
+
+      .container-text a{
+        padding:0;
+        margin-right: 10px;
       }
 
       @media only screen and (max-width : 801px) {
@@ -101,16 +137,14 @@
       font-size: 70%;	
       }  
 
+      .container-text p {
+      font-size:140%;
+      }
+
+
       }
 
       @media only screen and (max-width : 500px) {
-
-      #container-text { 
-      width: 80%;
-      margin-top: 50px;
-      margin: auto;
-      padding: 0;
-      }
 
 
       nav a{
@@ -154,12 +188,12 @@
       display: block;
       } 
 
-      #img-main {
-      margin-top: 2em;
-      width: 80%;
-      float: none;
-      margin: auto;
-      margin-top: 15px;
+      header,footer {
+      font-size: 40%;
+      }
+
+      .container-text p{
+      font-size: 96%;
       }
 
       }
@@ -204,11 +238,19 @@
                 </ul>
               </div>
             </div>
-  	  </nav>
+      </nav>
 
-      <div id="container-text">
-        <p> First Entry Coming Soon! </p>
+      <header><h1>Check out our thoughts on recent nightlife events in Prague below:</h1></header>
+
+      <div class="wrapper">
+        <div class="img-main">
+          <amp-img src="images/profile.jpg" width=70 height=100></amp-img>
+        </div>
+      <div class="container-text">
+          <p><strong>First Night of CUKR, July 28th 2017</strong><br>by Gianina Cristian<br>
+          <a href="blogs/blog_EN.html">EN</a><a href="blogs/blog_CZ.html">CZ</a>
       </div>
+
     </div>
   </body>
 </html>
